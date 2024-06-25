@@ -33,9 +33,9 @@ public class Product {
 		
 		//Comparison
 		String cartProductInfo = driver.findElement(By.cssSelector(".product-name a")).getText();
-        String cartPrice = driver.findElement(By.cssSelector(".item-price .price")).getText();
-        String productInfo = null;
-        String price = null;
+       		String cartPrice = driver.findElement(By.cssSelector(".item-price .price")).getText();
+        	String productInfo = null;
+        	String price = null;
         
         // Step 10: Compare and display result
         if (productInfo.equals(cartProductInfo) && price.equals(cartPrice)) {
