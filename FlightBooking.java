@@ -72,8 +72,8 @@ public class FlightBooking {
 	        boolean isPriceDescending = true;
 
 	        for (int i = 0; i < prices.size() - 1; i++) {
-	            String price1 = prices.get(i).getText().replace("₹", "").replace(",", "").trim();
-	            String price2 = prices.get(i + 1).getText().replace("₹", "").replace(",", "").trim();
+	            String price1 = prices.get(i).getText();
+	            String price2 = prices.get(i + 1).getText();
 
 	            if (Integer.parseInt(price1) < Integer.parseInt(price2)) {
 	                isPriceDescending = false;
