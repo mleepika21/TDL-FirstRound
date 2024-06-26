@@ -56,16 +56,17 @@ public class FlightBooking {
 	        {
 	        	driver.findElement(By.xpath("/flt-scene-host/flt-scene/flt-transform/flt-offset/flt-clip/flt-clip-interior/flt-offset/flt-offset/flt-clip/flt-clip-interior/flt-offset[4]/flt-offset/flt-offset/flt-offset/flt-clip/flt-clip-interior/flt-picture[1]/flt-canvas/draw-circle[6]")).click();
 	        }
-	        
-	        //Click on Search
-	        driver.findElement(By.id("SearchBtn")).click();
-	        
-	        //Filter - Non stop and cheapest
+
+		//Filter - Non stop 
 	        WebDriverWait wait =new WebDriverWait (driver, 10);
 	        WebElement nonStopFilter = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='Nonstop']/following-sibling::label")));
 	        nonStopFilter.click();
-
-	        driver.findElement(By.xpath("//input[@id='cheapest']/following-sibling::label")).click();
+		
+	        //Click on Search
+	        driver.findElement(By.id("SearchBtn")).click();
+	        
+	        //Filter Cheapest
+		driver.findElement(By.xpath("/flt-scene-host/flt-scene/flt-transform/flt-offset/flt-clip/flt-clip-interior/flt-offset/flt-offset/flt-clip/flt-clip-interior/flt-offset[3]/flt-offset/flt-offset[2]/flt-offset/flt-offset/flt-clip/flt-clip-interior/flt-picture[1]/flt-canvas/flt-paragraph[22]/flt-span")).click();
 	        
 	        //Compare Price
 	        List<WebElement> prices = driver.findElements(By.xpath("//div[contains(@class,'flight-card')]//span[@class='flight-price']"));
