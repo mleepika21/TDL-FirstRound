@@ -46,7 +46,7 @@ public class FlightBooking {
 	        dropdown.selectByIndex(0);
 	        for(int i=1;i<=2;i++)
 	        {
-	        	driver.findElement(By.xpath("/flt-scene-host/flt-scene/flt-transform/flt-offset/flt-clip/flt-clip-interior/flt-offset/flt-offset/flt-clip/flt-clip-interior/flt-offset[4]/flt-offset/flt-offset/flt-offset/flt-clip/flt-clip-interior/flt-picture[1]/flt-canvas/draw-circle[2]"));
+	        	driver.findElement(By.xpath("/flt-scene-host/flt-scene/flt-transform/flt-offset/flt-clip/flt-clip-interior/flt-offset/flt-offset/flt-clip/flt-clip-interior/flt-offset[4]/flt-offset/flt-offset/flt-offset/flt-clip/flt-clip-interior/flt-picture[1]/flt-canvas/draw-circle[2]")).click();
 	        }
 	        //Infant
 	        WebElement sdd1 = driver.findElement(By.cssSelector("flt-scene-host:nth-child(4) > flt-scene:nth-child(1) > flt-transform:nth-child(1) > flt-offset:nth-child(1) > flt-clip:nth-child(1) > flt-clip-interior:nth-child(1) > flt-offset:nth-child(1) > flt-offset:nth-child(1) > flt-clip:nth-child(1) > flt-clip-interior:nth-child(1) > flt-offset:nth-child(4) > flt-offset:nth-child(2) > flt-offset:nth-child(1) > flt-offset:nth-child(1) > flt-clip:nth-child(1) > flt-clip-interior:nth-child(1) > flt-picture:nth-child(1) > flt-canvas:nth-child(1) > flt-paragraph:nth-child(18) > flt-span:nth-child(1)"));
@@ -54,7 +54,7 @@ public class FlightBooking {
 	        dropdown1.selectByIndex(0);
 	        for(int i=1;i<=1;i++)
 	        {
-	        	driver.findElement(By.xpath("/flt-scene-host/flt-scene/flt-transform/flt-offset/flt-clip/flt-clip-interior/flt-offset/flt-offset/flt-clip/flt-clip-interior/flt-offset[4]/flt-offset/flt-offset/flt-offset/flt-clip/flt-clip-interior/flt-picture[1]/flt-canvas/draw-circle[6]"));
+	        	driver.findElement(By.xpath("/flt-scene-host/flt-scene/flt-transform/flt-offset/flt-clip/flt-clip-interior/flt-offset/flt-offset/flt-clip/flt-clip-interior/flt-offset[4]/flt-offset/flt-offset/flt-offset/flt-clip/flt-clip-interior/flt-picture[1]/flt-canvas/draw-circle[6]")).click();
 	        }
 	        
 	        //Click on Search
